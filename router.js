@@ -18,7 +18,7 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
             }
         ];
     }
-    if (hostname.split('.').length === 2) {
+    else if (hostname.split('.').length === 2) {
         routes = [
             {
                 path: '/',
@@ -26,7 +26,7 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
             }
         ];
     }
-    if (hostname.split('.').length === 1) {
+    else if (hostname.split('.').length === 1) {
         routes = [
             {
                 path: '/',
