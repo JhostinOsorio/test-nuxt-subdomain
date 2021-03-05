@@ -9,6 +9,7 @@ Vue.use(Router)
 export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
     let routes = [];
     const hostname = ssrContext ? ssrContext.req.headers.host : location.host;
+    console.log(hostname)
     if (hostname.split('.').length === 1) {
         routes = [
             {
