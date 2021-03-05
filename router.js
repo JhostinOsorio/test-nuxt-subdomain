@@ -10,22 +10,6 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
     let routes = [];
     const hostname = ssrContext ? ssrContext.req.headers.host : location.host;
     console.log(hostname)
-    if (hostname.split('.').length === 1) {
-        routes = [
-            {
-                path: '/',
-                component: Index,
-            }
-        ];
-    } 
-    if (hostname.split('.').length === 2) {
-        routes = [
-            {
-                path: '/',
-                component: Second,
-            }
-        ];
-    } 
     if (hostname.split('.').length === 3) {
         routes = [
             {
@@ -34,6 +18,23 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
             }
         ];
     }
+    if (hostname.split('.').length === 2) {
+        routes = [
+            {
+                path: '/',
+                component: Second,
+            }
+        ];
+    }
+    if (hostname.split('.').length === 1) {
+        routes = [
+            {
+                path: '/',
+                component: Index,
+            }
+        ];
+    }  
+    
     return new Router({
         mode: 'history',
         routes,
