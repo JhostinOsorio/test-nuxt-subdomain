@@ -14,14 +14,14 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
         routes = [
             {
                 path: '/',
-                component: Second,
+                component: Index,
             }
         ];
     } else if (hostname.split('.').length === 2) {
         routes = [
             {
                 path: '/',
-                component: Index,
+                component: Second,
             }
         ];
     } else if (hostname.split('.').length === 3) {
