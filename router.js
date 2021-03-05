@@ -17,14 +17,16 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
                 component: Index,
             }
         ];
-    } else if (hostname.split('.').length === 2) {
+    } 
+    if (hostname.split('.').length === 2) {
         routes = [
             {
                 path: '/',
                 component: Second,
             }
         ];
-    } else if (hostname.split('.').length === 3) {
+    } 
+    if (hostname.split('.').length === 3) {
         routes = [
             {
                 path: '/',
