@@ -32,6 +32,47 @@ export default {
   head() {
     return {
       title: 'Jhostin Osorio',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Esta es la página principal de Jhostin Osorio' },
+        { hid: 'keywords', name: 'keywords', content: 'Jhostin Osorio, Jhostin Estefano Osorio Macazana'},
+        {
+          property: 'og:title',
+          content: 'Jhostin Osorio',
+          vmid: 'og:title'
+        },
+        // {
+        //   property: 'og:image',
+        //   content: '',
+        //   vmid: 'og:image'
+        // },
+        {
+          property: 'og:description',
+          content: 'Esta es la página principal de Jhostin Osorio',
+          vmid: 'og:description'
+        },
+        {
+          property: 'twitter:title',
+          content: `Jhostin Osorio`,
+          vmid: 'twitter:title'
+        },
+        // {
+        //   property: 'twitter:image',
+        //   content: `${this.card ? this.card.participantA.image : ''}`,
+        //   vmid: 'twitter:image'
+        // },
+        {
+          property: 'twitter:description',
+          content: 'Esta es la página principal de Jhostin Osorio',
+          vmid: 'twitter:description'
+        },
+        {
+          name: 'twitter:card',
+          content: `summary_large_image`,
+          vmid: 'twitter:card'
+        }
+      ],
     }
   }
 }

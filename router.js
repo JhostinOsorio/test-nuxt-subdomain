@@ -24,7 +24,7 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
         routes = [
             {
                 path: '/',
-                component: Second,
+                component: Index,
             }
         ];
     }

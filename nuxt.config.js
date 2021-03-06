@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'test-nuxt-subdomain',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'es'
     },
     meta: [
       { charset: 'utf-8' },
