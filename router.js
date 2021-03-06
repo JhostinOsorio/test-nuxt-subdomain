@@ -11,6 +11,7 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
     const hostname = ssrContext ? ssrContext.req.headers.host : location.host;
     console.log(hostname)
     if (hostname.split('.').length === 3) {
+        console.log('llegue al 3')
         routes = [
             {
                 path: '/',
@@ -19,6 +20,7 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
         ];
     }
     else if (hostname.split('.').length === 2) {
+        console.log('llegue al 2')
         routes = [
             {
                 path: '/',
@@ -27,6 +29,7 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
         ];
     }
     else if (hostname.split('.').length === 1) {
+        console.log('llegue al 1')
         routes = [
             {
                 path: '/',
@@ -34,6 +37,8 @@ export function createRouter(ssrContext, createDefaultRouter, routerOptions) {
             }
         ];
     }  
+
+    console.log(routes)
     
     return new Router({
         mode: 'history',
