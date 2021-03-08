@@ -6,23 +6,20 @@
         Jhostin Osorio
       </h1>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
+        <nuxt-link
+          to="/about"
           class="button--grey"
         >
-          GitHub
-        </a>
+          Acerca de
+        </nuxt-link>
       </div>
+      <p>Esta es la página principal de Jhostin Estefano Osorio Macazana, acompañada de una breve explicación.</p>
+      <section>
+        <h2>La historia de Jhostin Osorio</h2>
+        <p>
+          Nació en el año 1998 del mes de octubre del dia 18.
+        </p>
+      </section>
     </div>
   </div>
 </template>
@@ -42,11 +39,11 @@ export default {
           content: 'Jhostin Osorio',
           vmid: 'og:title'
         },
-        // {
-        //   property: 'og:image',
-        //   content: '',
-        //   vmid: 'og:image'
-        // },
+        {
+          property: 'og:image',
+          content: 'https://edteam-media.s3.amazonaws.com/users/avatar/eefaf3cc-ec4d-46f7-87d0-2759c1c87ecf.jpg',
+          vmid: 'og:image'
+        },
         {
           property: 'og:description',
           content: 'Esta es la página principal de Jhostin Osorio',
@@ -57,11 +54,11 @@ export default {
           content: `Jhostin Osorio`,
           vmid: 'twitter:title'
         },
-        // {
-        //   property: 'twitter:image',
-        //   content: `${this.card ? this.card.participantA.image : ''}`,
-        //   vmid: 'twitter:image'
-        // },
+        {
+          property: 'twitter:image',
+          content: 'https://edteam-media.s3.amazonaws.com/users/avatar/eefaf3cc-ec4d-46f7-87d0-2759c1c87ecf.jpg',
+          vmid: 'twitter:image'
+        },
         {
           property: 'twitter:description',
           content: 'Esta es la página principal de Jhostin Osorio',
@@ -101,7 +98,7 @@ export default {
     sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 90px;
   color: #35495e;
   letter-spacing: 1px;
 }
