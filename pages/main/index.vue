@@ -32,6 +32,7 @@ export default {
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'google-site-verification', content: 'kcjwfR9onKxyUU-gSg3Y8HSUJkeZ_d-LjSqaOhOdZTo' },
         { hid: 'description', name: 'description', content: 'Esta es la página principal de Jhostin Osorio' },
         { hid: 'keywords', name: 'keywords', content: 'Jhostin Osorio, Jhostin Estefano Osorio Macazana'},
         {
